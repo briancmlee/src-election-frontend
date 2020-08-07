@@ -43,7 +43,7 @@ export default function ElectionResult({ electionData, username, userRole, logOu
                     <h3>The winners of the election are:</h3>
                     <ol>
                     {/* Creates a list item for each winner */}
-                    {(winnersArray in electionData) ? (
+                    {('winnersArray' in electionData) ? (
                         electionData.winnersArray.map((item, index) => (
                             <li key={index}>
                                 {item}
