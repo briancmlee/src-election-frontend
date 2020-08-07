@@ -41,8 +41,10 @@ function CandidateSelect(props) {
                     <option value={""}> -- select an option -- </option>
                     {/* Creates an option for each candidate */}
                     {props.candidates.map((candidate, index) => (
-                        {/* Disables the option if the candidate has already been selected in another field */}
-                        <option value={candidate} key={index} disabled={props.value.includes(candidate)} >{candidate}</option>
+                        <option value={candidate} key={index} disabled={props.value.includes(candidate)} >
+                            {/* Disables the option if the candidate has already been selected in another field */}
+                            {candidate}
+                        </option>
                     ))}
                 </Form.Control>
             </InputGroup>
