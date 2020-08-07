@@ -129,8 +129,7 @@ export default function Vote({ electionData, username, userRole, logOut, logIn }
                     ) : (
                         <h3>You cannot vote.</h3>
                     )
-                ) : <h3>You are not a voter for this election.</h3>) : (\
-                    {/* After the user has voted, show: */}
+                ) : <h3>You are not a voter for this election.</h3>) : (
                     <h4>Thanks for voting</h4>
                 )}
                 

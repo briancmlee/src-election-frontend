@@ -41,11 +41,10 @@ export default function Layout({ children, pageTitle, username, userRole, author
         <div>
           <Header username={username} logOut={logOut} />
           {authorizedRoles.includes(userRole) ? (
-            {/* If the user is authorised */}
             <Container>{children}</Container>
           ) : (
-            {/* If the user is unauthorised */}
             <Container>
+            {/* If the user is unauthorised */}
               <Col xs={{ span: 6, offset: 3 }} style={{"margin-top": "20vh"}}>
                 <p>You are not authorised to access this page.</p>
                 <p>Log into an authorised account and try again.</p>

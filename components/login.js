@@ -83,8 +83,8 @@ export default function LoginForm({ handleLogin }) {
             <Form.Control name="password" type="password" value={password} placeholder="Enter Password" onChange={handleChange} required />
           </Form.Group>
           <Button type="submit">Login</Button>
+          {/* If the password and username don't match */}
           {error ? (
-            {/* If the password and username don't match */}
             <Form.Text>The username or password is incorrect.</Form.Text>
           ) : ""}
         </Form>

@@ -83,8 +83,8 @@ export default function CreateElection({ electionData, username, userRole, logOu
   return (
     <Layout pageTitle="Create election" username={username} userRole={userRole} authorizedRoles={["admin"]} logOut={logOut} logIn={logIn} >  
       <h4>Create new election</h4>
+      {/* Show after creating election */}
       {created ? (
-        {/* Show after creating election */}
         <Link href="/dashboard"><p>Return to dashboard</p></Link>
       ) : (
         <Form onSubmit={handleSubmit} >
